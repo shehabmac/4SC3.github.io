@@ -22,7 +22,7 @@ window.SITE_CONFIG = {
     short:
       "Academic project for a university course. Educational purposes only. Not an official city analysis, consultation, or endorsement.",
     long:
-      "This website presents a student academic project created for coursework. Any analyses, results, and potential improvements are simulation-based and provided for educational purposes only. They do not represent official work, endorsement, or consultation for any city or agency.",
+      "This website presents a student academic project created for coursework. Any analyses, results, and potential improvements are simulation-based and provided for educational purposes only. They do not represent official work, endorsement, or consultation for the City of Toronto or any other city or agency.",
     videoOverlaySuggestion:
       "Academic Project · Educational Use Only · Not Official City Work"
   },
@@ -40,30 +40,30 @@ window.SITE_CONFIG = {
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
-	
-	  homeLinkText: "RoadwayVR",
-	
-	  templateCredit:
-	    "This academic showcase template was developed by RoadwayVR.",
-	
-	  templateCreditLinkText:
-	    "Learn more at RoadwayVR.com",
-	
-	  templateCreditUrl:
-	    "https://roadwayvr.com"
+    footerBg: "#111111",
+    footerText: "#ffffff",
+    footerBorder: "#222222",
+
+    homeLinkText: "RoadwayVR",
+
+    templateCredit:
+      "This academic showcase template was developed by RoadwayVR.",
+
+    templateCreditLinkText:
+      "Learn more at RoadwayVR.com",
+
+    templateCreditUrl:
+      "https://roadwayvr.com"
   },
 
   intro: {
-    projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitleLabel: "Mini Project A",
+    projectTitle: "Roadway and Traffic Modelling at Warden Avenue and Lawrence Avenue East, Toronto: SUMO Analysis of Automated Vehicles and Signal-Timing Intervention",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "Autoplay preview video (academic project)",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Autoplay preview (≈20 seconds): Raw Video → SUMO (Traffic Simulation)"
   },
 
   caseStudy: {
@@ -71,26 +71,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+      "Roadway models represent streets, lane movements, signal states, and individual vehicles so that changes can be tested before implementation.",
+      "The study area is Warden Avenue and Lawrence Avenue East in Scarborough, Toronto, represented in the model by junction J1.",
+      "We focus on E206, a 30.07 m, three-lane incoming approach to J1 with a lane speed of about 50 km/h.",
+      "The hypothetical municipal question: could a different vehicle fleet or a revised green split improve traffic on this approach?"
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+      "A connected roadway model and a traceable human-driven vehicle (HDV) baseline must be built from the assigned GIS study area.",
+      "The effect of a 100% connected automated vehicle (CAV) fleet is uncertain because it depends on the assumed controller behaviour.",
+      "It is unclear whether moving green time at J1 improves E206 under the same demand and routes.",
+      "Results are simulation-based and uncalibrated, so they must be communicated with their limits."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+      "Develop the Stage A1 network, configure Stage A2 HDV traffic, and establish the baseline speed–density behaviour on E206.",
+      "Compare a 100% CAV condition with the HDV baseline while holding the roadway, demand, routes, and signals constant.",
+      "Select, implement, and evaluate a J1 green-time change using before-and-after HDV results on E206.",
+      "Present the results through speed–density figures, KPIs, and a showcase website."
     ]
   },
 
@@ -98,24 +98,24 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Step 1: Roadway Network Development (SUMO, Stage A1)",
+        text: "Build the Warden Avenue and Lawrence Avenue East network from the GIS reference, with lane geometry, junctions, and turning connections.",
+        image: "assets/img/image5.jpg"
+      },
+      {
+        title: "Step 2: HDV Baseline Traffic (SUMO, Stage A2)",
+        text: "Assign twelve fixed-path flows (2,550 veh/h) and the 60-second J1 signal program, then record the E206 baseline.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+        title: "Step 3: 100% CAV Scenario",
+        text: "Change all twelve flows to a CACC-based CAV type with the same network, routes, demand, and signals.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+        title: "Step 4: J1 Signal-Timing Intervention and Results",
+        text: "Shift 5 seconds of green to the E206-serving phase (22/3/32/3 s) and compare speed–density results.",
         image: "assets/img/image4.jpg"
-      },
-      {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
-        image: "assets/img/image5.jpg"
       }
     ]
   },
@@ -124,71 +124,71 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Roadway Network Development (SUMO)",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+          { text: "Develop the Stage A1 network from the supplied GIS reference, including edges, lane geometry, junctions, and connections." },
+          { text: "Retain internal junction links in NETEDIT so vehicles can follow the intended paths through J1." },
+          { text: "Identify E206 as the selected incoming approach: 30.07 m, three lanes, feeding J1." }
+        ],
+        image: "assets/img/image5.jpg"
+      },
+      {
+        title: "Module 2: HDV Baseline Traffic and Signal Program",
+        bullets: [
+          { text: "Define twelve fixed-path flows from 0 to 3,600 s, with a nominal total of 2,550 vehicles per hour." },
+          { text: "Use the static J1 program: 27/3/27/3 s phases in a 60-second cycle." },
+          { text: "Run SUMO 1.26 with a 0.1-second step and 100-second edgeData output, analysing 36 complete intervals." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 3: 100% CAV Scenario",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Switch the twelve flows to a CAV type using CACC car following, a 0.6 s desired time gap, and a 1.5 m minimum gap." },
+          { text: "Set acceleration to 2.9 m/s² and deceleration to 7.5 m/s², with the network, routes, and demand unchanged." },
+          { text: "Use the 0.1-second step in all scenarios, because the original one-second step produced collisions and teleports." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 4: J1 Signal-Timing Intervention and Results",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+          { text: "Move 5 seconds of green to the E206-serving phase, changing 27/3/27/3 s to 22/3/32/3 s with the 60-second cycle unchanged." },
+          { text: "Compare E206 mean speed, density, and waiting time with the HDV baseline over the same 36 intervals." },
+          { text: "State the limits: no field calibration, one random seed, and no assessment of the approaches that lose green time." }
         ],
         image: "assets/img/image4.jpg"
-      },
-      {
-        title: "Module 4: Results & Communication",
-        bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
-        ],
-        image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+  results: {
+    title: "Results & Potential Improvements",
+    subtitle:
+      "E206 speed–density results from 36 complete 100-second observations (0–3,600 s) comparing the 100% HDV baseline with the 100% CAV scenario. The J1 signal-timing result is summarized in the discussion. Results are for educational purposes only.",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+    charts: {
+      left: {
+        title: "Base: 100% HDV — E206 Speed–Density",
+        src: "assets/img/image6.jpg",
+        alt: "Speed–density plot for the 100% HDV baseline on E206: mean speed versus mean edge density with a dashed linear fit, R² = 0.781"
+      },
+      right: {
+        title: "Scenario 1: 100% CAV — E206 Speed–Density",
+        src: "assets/img/image7.jpg",
+        alt: "Speed–density plot for the 100% CAV scenario on E206: mean speed versus mean edge density with a dashed linear fit, R² = 0.879"
+      }
+    },
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
+    discussionTitle: "Discussion",
+    discussionBullets: [
+      "Baseline (100% HDV): mean E206 speed is 9.114 km/h and mean density is 73.73 veh/km.",
+      "100% CAV: mean speed rises to 10.095 km/h and mean density falls to 65.63 veh/km, but gains vary by density band, so a uniform CAV benefit is not established.",
+      "J1 signal change (22/3/32/3 s): mean speed rises to 12.622 km/h, mean density falls to 50.93 veh/km, and the E206 waiting-time sum falls from 5,114.3 s to 3,029.7 s.",
+      "The signal gain comes at the cost of 5 s of green for the other phase, so the net effect on J1 needs an all-approach review.",
+      "These are simulation results with no field calibration and a single run per scenario. The 22/3/32/3 plan is a candidate for further testing, not a ready municipal plan."
+    ]
+  },
 
   team: {
     title: "Team & Acknowledgments",
@@ -196,17 +196,21 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Shehab Ahmed", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
+      { name: "Rithik Kottaram", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
+      { name: "Alex Carpen", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
+      { name: "Marcus Cameron", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" }
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
+      "Course: SMRTTECH 4SC3, Smart Cities and Communities",
+      "Institution: McMaster University",
       "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Tools: SUMO 1.26, NETEDIT, Python",
+      "AI assistance was used to inspect files, prepare reruns, extract data, prepare charts, find literature, and draft parts of the report; the team checked the results."
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+    repoUrl: "https://github.com/shehabmac"
   }
 };
