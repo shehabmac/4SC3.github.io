@@ -100,7 +100,7 @@ window.SITE_CONFIG = {
       {
         title: "Step 1: Roadway Network Development (SUMO, Stage A1)",
         text: "Build the Warden Avenue and Lawrence Avenue East network from the GIS reference, with lane geometry, junctions, and turning connections.",
-        image: "assets/img/image2.jpg"
+        image: "assets/img/image.jpg"
       },
       {
         title: "Step 2: HDV Baseline Traffic (SUMO, Stage A2)",
@@ -130,7 +130,7 @@ window.SITE_CONFIG = {
           { text: "Retain internal junction links in NETEDIT so vehicles can follow the intended paths through J1." },
           { text: "Identify E206 as the selected incoming approach: 30.07 m, three lanes, feeding J1." }
         ],
-        image: "assets/img/image5.jpg"
+        image: "assets/img/image.jpg"
       },
       {
         title: "Module 2: HDV Baseline Traffic and Signal Program",
