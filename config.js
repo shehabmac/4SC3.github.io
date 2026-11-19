@@ -196,10 +196,10 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Shehab Ahmed", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
-      { name: "Rithik Kottaram", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
-      { name: "Alex Carpen", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" },
-      { name: "Marcus Cameron", role: "Group 8 member — roadway and traffic modelling, SUMO analysis, and results communication" }
+      { name: "Shehab Ahmed", role: "Group 8 member — Roadway and traffic modelling" },
+      { name: "Rithik Kottaram", role: "Group 8 member — Roadway and traffic modelling" },
+      { name: "Alex Carpen", role: "Group 8 member — SUMO analysis" },
+      { name: "Marcus Cameron", role: "Group 8 member — Results communication" }
     ],
 
     acknowledgments: [
