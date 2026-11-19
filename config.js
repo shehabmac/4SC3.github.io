@@ -205,7 +205,7 @@ window.SITE_CONFIG = {
     acknowledgments: [
       "Course: SMRTTECH 4SC3, Smart Cities and Communities",
       "Institution: McMaster University",
-      "Instructor: Ahmad Mohammadi",
+      "Instructor: Marjan Alavi & Ahmad Mohammadi",
       "Tools: SUMO 1.26, NETEDIT, Python",
       "AI assistance was used to inspect files, prepare reruns, extract data, prepare charts, find literature, and draft parts of the report; the team checked the results."
     ],
