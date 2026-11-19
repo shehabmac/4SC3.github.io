@@ -100,7 +100,7 @@ window.SITE_CONFIG = {
       {
         title: "Step 1: Roadway Network Development (SUMO, Stage A1)",
         text: "Build the Warden Avenue and Lawrence Avenue East network from the GIS reference, with lane geometry, junctions, and turning connections.",
-        image: "assets/img/image5.jpg"
+        image: "assets/img/image2.jpg"
       },
       {
         title: "Step 2: HDV Baseline Traffic (SUMO, Stage A2)",
